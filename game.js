@@ -1144,7 +1144,7 @@ let gameState = false;
 let state = "start";
 // mechanichs
 function draw() {
-  frameRate(80);
+  frameRate(60);
   //states
   if (state === "game") {
     game();
