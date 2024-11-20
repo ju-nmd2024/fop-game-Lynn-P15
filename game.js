@@ -1,4 +1,3 @@
-angleMode(DEGREES);
 let x = 0;
 let y = 0;
 let s = 0.3;
@@ -42,6 +41,7 @@ let cloud4Y = 150;
 //canvas
 function setup() {
   createCanvas(700, 700);
+  angleMode(DEGREES);
 }
 
 //Start Screen
