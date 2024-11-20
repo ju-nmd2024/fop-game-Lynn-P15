@@ -19,8 +19,8 @@ let ms = 1.0;
 let characterX = 400;
 let characterY = 100;
 
-let velocityY = 0.2;
-let acceleration = 0.03;
+let velocityY = 0.4;
+let acceleration = 0.1;
 //let velocityY = 0;
 //let acceleration = 0;
 let velocityX = 0;
@@ -1301,7 +1301,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1311,7 +1311,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1322,7 +1322,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1332,7 +1332,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1343,7 +1343,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1353,7 +1353,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1363,7 +1363,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1373,7 +1373,7 @@ function draw() {
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1388,13 +1388,13 @@ function draw() {
     characterX + 70 * s < nx + 30 &&
     characterY + 182 * s > ny - 5 &&
     characterY + 182 * s < ny + 5 &&
-    velocityY > 2.4
+    velocityY > 4
   ) {
     state = "lost";
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1404,13 +1404,13 @@ function draw() {
     characterX + 70 * s < nx + 30 &&
     characterY + 182 * s > ny - 5 &&
     characterY + 182 * s < ny + 5 &&
-    velocityY < 2.4
+    velocityY < 4
   ) {
     state = "win";
     console.log("gg");
     gameState = false;
     velocityX = 0;
-    velocityY = 0.2;
+    velocityY = 0.4;
     characterX = 600;
     characterY = 1;
   }
@@ -1419,7 +1419,7 @@ function draw() {
 function keyTyped() {
   if (gameState === true) {
     if (keyIsDown(32)) {
-      velocityY = -2;
+      velocityY = -3;
     }
     if (key === "a") {
       velocityX += -1.5;
